@@ -5,3 +5,8 @@ dist/
 contact-*.jpg
 contact_sheet.py
 *.tar.gz
+photo-review/
+review_photos.py
+update_page.py
+format-checkout.py
+source-assets/

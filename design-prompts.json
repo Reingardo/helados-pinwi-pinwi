@@ -1,0 +1,129 @@
+{
+  "mode": "Herramienta integrada image_gen",
+  "assets": [
+    {
+      "id": "ba-0",
+      "flavor": "Limón",
+      "file": "public/assets/generado-ba-0.png.webp",
+      "prompt": "Use case: product-mockup. Generate ONE square product photo for a Mexican frozen boli, flavor Limón. Reference: local blue bubblegum bolis photo. Keep exactly this type of long narrow clear plastic sleeves, sealed pointed ends, handmade texture, overlapping abundant pile filling entire frame, glossy condensation and realistic lighting. ALL filling in EVERY sleeve must be bright lime green, icy and slightly translucent. Only Limón bolis, no mixed flavors, no sticks, no loose ingredients, no text, no logo, no watermark. Appetizing realistic illustrative product photograph based on the actual packaging reference."
+    },
+    {
+      "id": "ba-1",
+      "flavor": "Piña",
+      "file": "public/assets/generado-ba-1.png.webp",
+      "prompt": "Use case: product-mockup. Generate ONE square product photo for a Mexican frozen boli, flavor Piña. Reference: local blue bubblegum bolis photo. Keep exactly this type of long narrow clear plastic sleeves, sealed pointed ends, handmade texture, overlapping abundant pile filling entire frame, glossy condensation and realistic lighting. ALL filling in EVERY sleeve must be bright pineapple yellow, icy and slightly translucent. Only Piña bolis, no mixed flavors, no sticks, no loose ingredients, no text, no logo, no watermark. Appetizing realistic illustrative product photograph based on the actual packaging reference."
+    },
+    {
+      "id": "ba-2",
+      "flavor": "Uva",
+      "file": "public/assets/generado-ba-2.png.webp",
+      "prompt": "Use case: product-mockup. Generate ONE square product photo for a Mexican frozen boli, flavor Uva. Reference: local blue bubblegum bolis photo. Keep exactly this type of long narrow clear plastic sleeves, sealed pointed ends, handmade texture, overlapping abundant pile filling entire frame, glossy condensation and realistic lighting. ALL filling in EVERY sleeve must be deep grape purple, icy and slightly translucent. Only Uva bolis, no mixed flavors, no sticks, no loose ingredients, no text, no logo, no watermark. Appetizing realistic illustrative product photograph based on the actual packaging reference."
+    },
+    {
+      "id": "ba-3",
+      "flavor": "Chamoy",
+      "file": "public/assets/generado-ba-3.png.webp",
+      "prompt": "Use case: product-mockup. Generate ONE square product photo for a Mexican frozen boli, flavor Chamoy. Reference: local blue bubblegum bolis photo. Keep exactly this type of long narrow clear plastic sleeves, sealed pointed ends, handmade texture, overlapping abundant pile filling entire frame, glossy condensation and realistic lighting. ALL filling in EVERY sleeve must be deep reddish burgundy chamoy with fine chili speckles, icy. Only Chamoy bolis, no mixed flavors, no sticks, no loose ingredients, no text, no logo, no watermark. Appetizing realistic illustrative product photograph based on the actual packaging reference."
+    },
+    {
+      "id": "ba-6",
+      "flavor": "Fresa agua",
+      "file": "public/assets/generado-ba-6.png.webp",
+      "prompt": "Product-mockup: one square realistic photo of an abundant overlapping pile of Mexican frozen bolis, all flavor Fresa agua, all filling strawberry red, translucent icy water texture. Match the reference photo's long narrow clear plastic sleeves, pointed sealed ends, handmade frozen filling, condensation and close-up full-frame composition. No blue filling, no sticks, no different flavors, no text, logos, watermarks or loose ingredients. Only Fresa agua bolis."
+    },
+    {
+      "id": "ba-7",
+      "flavor": "Piña con chile",
+      "file": "public/assets/generado-ba-7.png.webp",
+      "prompt": "Product-mockup: one square realistic photo of an abundant overlapping pile of Mexican frozen bolis, all flavor Piña con chile, all filling golden pineapple yellow with reddish chili swirls and flecks. Match the reference photo's long narrow clear plastic sleeves, pointed sealed ends, handmade frozen filling, condensation and close-up full-frame composition. No blue filling, no sticks, no different flavors, no text, logos, watermarks or loose ingredients. Only Piña con chile bolis."
+    },
+    {
+      "id": "bl-0",
+      "flavor": "Pistache",
+      "file": "public/assets/generado-bl-0.png.webp",
+      "prompt": "Product-mockup. ONE square photo, ONLY Mexican milk bolis flavor Pistache; all sleeves contain pale creamy pistachio green. Use reference only for actual long slim clear plastic sleeve shape, pointed heat-sealed ends, pile arrangement, condensation and soft realistic lighting. Transform all blue filling to the requested flavor. Full frame abundant overlapping bolis. No other colors/flavors, sticks, text, logos, watermarks or props. Appetizing realistic catalog photograph."
+    },
+    {
+      "id": "bl-1",
+      "flavor": "Coco",
+      "file": "public/assets/generado-bl-1.png.webp",
+      "prompt": "Product-mockup. ONE square photo, ONLY Mexican milk bolis flavor Coco; all sleeves contain creamy coconut white with very fine coconut flecks. Use reference only for actual long slim clear plastic sleeve shape, pointed heat-sealed ends, pile arrangement, condensation and soft realistic lighting. Transform all blue filling to the requested flavor. Full frame abundant overlapping bolis. No other colors/flavors, sticks, text, logos, watermarks or props. Appetizing realistic catalog photograph."
+    },
+    {
+      "id": "bl-5",
+      "flavor": "Rompope",
+      "file": "public/assets/generado-bl-5.png.webp",
+      "prompt": "Product-mockup. ONE square photo, ONLY Mexican milk bolis flavor Rompope; all sleeves contain warm golden custard yellow-orange. Use reference only for actual long slim clear plastic sleeve shape, pointed heat-sealed ends, pile arrangement, condensation and soft realistic lighting. Transform all blue filling to the requested flavor. Full frame abundant overlapping bolis. No other colors/flavors, sticks, text, logos, watermarks or props. Appetizing realistic catalog photograph."
+    },
+    {
+      "id": "bl-6",
+      "flavor": "Plátano",
+      "file": "public/assets/generado-bl-6.png.webp",
+      "prompt": "Product-mockup. ONE square photo, ONLY Mexican milk bolis flavor Plátano; all sleeves contain creamy banana yellow. Match reference actual long slim clear plastic sleeve shape, pointed heat-sealed ends, pile arrangement, condensation and soft realistic lighting. All bolis same flavor. Full-frame overlapping pile. No blue filling, sticks, text, logos, watermarks or props. Realistic appetizing catalog image."
+    },
+    {
+      "id": "bl-7",
+      "flavor": "Nuez",
+      "file": "public/assets/generado-bl-7.png.webp",
+      "prompt": "Product-mockup. ONE square photo, ONLY Mexican milk bolis flavor Nuez; all sleeves contain creamy light walnut beige with tiny walnut speckles. Match reference actual long slim clear plastic sleeve shape, pointed heat-sealed ends, pile arrangement, condensation and soft realistic lighting. All bolis same flavor. Full-frame overlapping pile. No blue filling, sticks, text, logos, watermarks or props. Realistic appetizing catalog image."
+    },
+    {
+      "id": "bl-8",
+      "flavor": "Mango leche",
+      "file": "public/assets/generado-bl-8.png.webp",
+      "prompt": "Product-mockup. ONE square photo, ONLY Mexican milk bolis flavor Mango leche; all sleeves contain creamy mango orange-yellow. Match reference actual long slim clear plastic sleeve shape, pointed heat-sealed ends, pile arrangement, condensation and soft realistic lighting. All bolis same flavor. Full-frame overlapping pile. No blue filling, sticks, text, logos, watermarks or props. Realistic appetizing catalog image."
+    },
+    {
+      "id": "bl-4",
+      "flavor": "Chocolate",
+      "file": "public/assets/generado-bl-4.png.webp",
+      "prompt": "Variante de chocolate basada en la foto real de bolis de chicle; empaque y composición preservados, relleno café chocolate."
+    },
+    {
+      "id": "ni-0",
+      "flavor": "Fresa",
+      "file": "public/assets/generado-ni-0.png.webp",
+      "prompt": "Product-mockup: ONE square catalog photograph of ONE small clear disposable plastic cup of Mexican nieve flavor Fresa. The reference contains a mixed group: use ONLY the cup shape, proportions, frozen texture, simple colorful plastic spoon and real style of the matching flavor as reference. Isolate one cup, not the assortment. Filling: creamy strawberry pink with a little red strawberry sauce. Full cup visible centered three-quarter view on soft pale pink tabletop and light blue background. No other flavors, no waffle cones, no scoops in dishes, no text, logos or watermark. Realistic appetizing photography, consistent soft lighting."
+    },
+    {
+      "id": "ni-1",
+      "flavor": "Nuez",
+      "file": "public/assets/generado-ni-1.png.webp",
+      "prompt": "Product-mockup: ONE square catalog photograph of ONE small clear disposable plastic cup of Mexican nieve flavor Nuez. The reference contains a mixed group: use ONLY the cup shape, proportions, frozen texture, simple colorful plastic spoon and real style of the matching flavor as reference. Isolate one cup, not the assortment. Filling: creamy walnut beige with fine walnut flecks. Full cup visible centered three-quarter view on soft pale pink tabletop and light blue background. No other flavors, no waffle cones, no scoops in dishes, no text, logos or watermark. Realistic appetizing photography, consistent soft lighting."
+    },
+    {
+      "id": "ni-2",
+      "flavor": "Vainilla",
+      "file": "public/assets/generado-ni-2.png.webp",
+      "prompt": "Product-mockup: ONE square realistic catalog photograph of ONE small clear disposable plastic cup of Mexican nieve flavor Vainilla, filling creamy pale vanilla yellow. Use reference assortment to identify matching flavor; preserve simple real cup shape/proportions, a colorful plastic spoon, handmade frozen texture. Show only selected flavor, full cup centered three-quarter view, pale pink table, pale blue background, soft light. No assortment, cones, text, logos, watermark or unrelated toppings."
+    },
+    {
+      "id": "ni-3",
+      "flavor": "Oreo",
+      "file": "public/assets/generado-ni-3.png.webp",
+      "prompt": "Product-mockup: ONE square realistic catalog photograph of ONE small clear disposable plastic cup of Mexican nieve flavor Oreo, filling off-white cookies-and-cream with crushed dark chocolate sandwich cookie pieces and one cookie. Use reference assortment to identify matching flavor; preserve simple real cup shape/proportions, a colorful plastic spoon, handmade frozen texture. Show only selected flavor, full cup centered three-quarter view, pale pink table, pale blue background, soft light. No assortment, cones, text, logos, watermark or unrelated toppings."
+    },
+    {
+      "id": "ni-5",
+      "flavor": "Pica fresa",
+      "file": "public/assets/generado-ni-5.png.webp",
+      "prompt": "Product-mockup: ONE square realistic photo of ONE small clear disposable plastic cup of Mexican nieve flavor Pica fresa. Filling bright strawberry red frozen ice with darker sweet chili chamoy swirl. Identify corresponding flavor from the reference assortment and preserve real plastic cup shape, frozen texture, simple colorful plastic spoon. One cup only, full cup visible centered three-quarter view on pale pink table with pale blue background. No assortment, no cones, no text, logos, watermark, unrelated toppings. Soft even appetizing product lighting."
+    },
+    {
+      "id": "ni-6",
+      "flavor": "Limón",
+      "file": "public/assets/generado-ni-6.png.webp",
+      "prompt": "Product-mockup: ONE square realistic photo of ONE small clear disposable plastic cup of Mexican nieve flavor Limón. Filling bright lime green icy sorbet. Identify corresponding flavor from the reference assortment and preserve real plastic cup shape, frozen texture, simple colorful plastic spoon. One cup only, full cup visible centered three-quarter view on pale pink table with pale blue background. No assortment, no cones, no text, logos, watermark, unrelated toppings. Soft even appetizing product lighting."
+    },
+    {
+      "id": "ni-4",
+      "flavor": "Mango con chamoy",
+      "file": "public/assets/generado-ni-4.png.webp",
+      "prompt": "Product-mockup, edit reference image 1 (single pica fresa cup) into MANGO CON CHAMOY nieve. Preserve exactly cup, spoon shape, pink tabletop, pale blue background, camera angle, framing and lighting from image 1. Change ONLY the frozen filling to vivid golden yellow-orange mango sorbet with rich red chamoy marbling and red chamoy swirl on top. Reference image 2 (authentic mango chamoy assortment) is ONLY for actual flavor color and sauce appearance; do not copy its multiple cups, text or logo. One full clear plastic cup only. No strawberry red base, no text, logos or unrelated fruit garnish. Same professional catalog visual style as image 1."
+    }
+  ],
+  "storefront": {
+    "file": "public/assets/sucursal-unidad-editada.png.webp",
+    "prompt": "Retirar autos y letreros del negocio vecino, centrar la fachada original de Helados Pinwi y preservar su identidad."
+  }
+}
