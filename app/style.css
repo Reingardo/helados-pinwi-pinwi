@@ -32,3 +32,30 @@
 @keyframes pinwi-photo-reveal{0%,75%{clip-path:inset(0 100% 0 0)}100%{clip-path:inset(0 0 0 0)}}
 @keyframes pinwi-light-sweep{0%,74.9%{left:0;opacity:0}75%{left:0;opacity:1}99%{opacity:1}100%{left:100%;opacity:0}}
 @media(prefers-reduced-motion:reduce){.hero-slide-next,.hero-laser{animation:none}.hero-laser,.hero-slide-controls button:last-child{display:none}}
+
+header .brand-logo{width:110px;height:90px;object-fit:contain;border-radius:8px}
+@media(max-width:720px){header .brand-logo{width:83px;height:68px}}
+
+header .brand-logo{background:transparent;border-radius:0;transform-origin:50% 80%;animation:pinwi-logo-float 4.8s ease-in-out infinite;will-change:transform}
+header .brand:hover .brand-logo{animation:pinwi-logo-wave .7s ease-in-out both}
+@keyframes pinwi-logo-float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-3px) rotate(1.5deg)}}
+@keyframes pinwi-logo-wave{0%,100%{transform:rotate(0)}25%{transform:rotate(-5deg)}65%{transform:rotate(4deg)}}
+@media(prefers-reduced-motion:reduce){header .brand-logo,header .brand:hover .brand-logo{animation:none;will-change:auto}}
+
+/* Keep checkout within reach after adding the first item, at every screen size. */
+.mobile-cart.floating-cart{display:flex;position:fixed;inset:auto max(24px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) auto;width:auto;min-width:290px;min-height:58px;padding:15px 20px;gap:14px;border:1px solid #ffffff66;border-radius:999px;background:#bf3275;color:#fff;box-shadow:0 8px 30px #77254440;z-index:40;font-size:13px;transition:transform .2s,box-shadow .2s}
+.mobile-cart.floating-cart:hover{transform:translateY(-3px);box-shadow:0 12px 32px #77254455}
+.mobile-cart.floating-cart:focus-visible{outline:3px solid #189cd1;outline-offset:4px}
+.mobile-cart.floating-cart>b{margin-left:auto;padding-left:14px;border-left:1px solid #ffffff55;font-size:15px}
+body:has(.floating-cart){padding-bottom:96px}
+@media(max-width:720px){.mobile-cart.floating-cart{left:16px;right:16px;bottom:max(16px,env(safe-area-inset-bottom));width:auto;min-width:0;gap:10px;padding:15px 17px}.mobile-cart.floating-cart>b{font-size:14px}body:has(.floating-cart){padding-bottom:calc(90px + env(safe-area-inset-bottom))}}
+
+.product-bottom{flex-wrap:wrap;gap:10px}
+.catalog-quantity{display:grid;grid-template-columns:44px minmax(32px,1fr) 44px;width:148px;max-width:100%;align-items:center;border:1px solid #edbfd3;border-radius:24px;overflow:hidden;background:#fff7fb}
+.catalog-quantity button{display:grid;place-items:center;min-height:44px;padding:0;background:transparent;color:#b63275}
+.catalog-quantity button:hover:not(:disabled){background:#fce2ef}
+.catalog-quantity input{width:100%;min-width:0;height:44px;padding:0 2px;border:0;border-radius:0;background:transparent;text-align:center;color:var(--ink);font-size:16px;font-weight:600}
+.catalog-quantity:focus-within{outline:2px solid #189cd1;outline-offset:2px}
+.catalog-quantity input:focus-visible{outline:none}
+
+@media(max-width:360px){.catalog-quantity{width:100%;grid-template-columns:1fr 1fr;grid-template-rows:44px 44px;border-radius:14px}.catalog-quantity input{grid-column:1/-1;grid-row:1;border-bottom:1px solid #edbfd3}.catalog-quantity button{grid-row:2}.catalog-quantity button:first-child{border-right:1px solid #edbfd3}}
