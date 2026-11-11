@@ -1,10 +1,10 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {calculateCart,products,packages} from '../lib/catalog.mjs';
-test('retail total above 400 does not qualify if wholesale is below 400',()=>{const r=calculateCart({'ba-0':79});assert.equal(r.total,474);assert.equal(r.wholesaleSubtotal,395);assert.equal(r.isWholesale,false)});
-test('exact wholesale threshold activates all items',()=>{const r=calculateCart({'ba-0':80});assert.equal(r.total,400);assert.equal(r.isWholesale,true);assert.equal(r.savings,80)});
-test('mixed flavors and categories use one threshold',()=>{const r=calculateCart({'ba-0':20,'hl-0':20});assert.equal(r.total,420);assert.equal(r.isWholesale,true)});
-test('removal returns to retail',()=>{assert.equal(calculateCart({'ba-0':80}).isWholesale,true);assert.equal(calculateCart({'ba-0':79}).isWholesale,false)});
-test('packages preserve their published price',()=>{const r=calculateCart({'pack-fiesta':1,'ba-0':1});assert.equal(r.total,700)});
-test('empty and invalid cart entries are ignored',()=>{assert.equal(calculateCart({unknown:3,'ba-0':-2,'hl-0':1.5}).total,0)});
-test('catalog has unique ids and valid prices',()=>{const all=[...products,...packages];assert.equal(new Set(all.map(p=>p.id)).size,all.length);assert(all.every(p=>p.retail>=p.wholesale&&p.wholesale>0));assert.equal(products.length,74)});
+test('wholesale applies even to one item',()=>{assert.equal(calculateCart({'ba-0':1}).total,5);assert.equal(calculateCart({'hl-0':1}).total,16)});
+test('totals stay wholesale below, at and above 400',()=>{for(const [q,total] of [[79,395],[80,400],[81,405]])assert.equal(calculateCart({'ba-0':q}).total,total)});
+test('mixed products use wholesale prices',()=>{assert.equal(calculateCart({'ba-0':20,'hl-0':20}).total,420)});
+test('removal never switches to retail',()=>{assert.equal(calculateCart({'ba-0':80}).total-calculateCart({'ba-0':79}).total,5)});
+test('packages preserve published prices',()=>{assert.equal(calculateCart({'pack-fiesta':1,'ba-0':1}).total,700)});
+test('invalid cart entries are ignored',()=>{assert.equal(calculateCart({unknown:3,'ba-0':-2,'hl-0':1.5}).total,0)});
+test('all category prices match the wholesale menu',()=>{const prices={ba:5,bl:5,hl:16,ha:16,pa:16,pl:20,ar:22,ni:21,sa:16,es:20,ec:22,en:25};for(const p of products)assert.equal(p.wholesale,prices[p.id.split('-')[0]],p.name);const all=[...products,...packages];assert.equal(new Set(all.map(p=>p.id)).size,all.length);assert.equal(products.length,74)});

@@ -10,7 +10,7 @@ Instalar con pnpm y ejecutar `pnpm dev`. Producción: `pnpm build`. Pruebas de p
 
 `lib/catalog.mjs` contiene 74 variantes de productos y cinco paquetes. Precios en MXN por pieza o paquete, transcritos del menú y promociones proporcionados. Bolis corresponden a Pinwis; bollos corresponden a heladitos del menú. Algunas fotos representan un surtido de la categoría y se indica en la página.
 
-El precio de mayoreo se activa si el subtotal completo calculado con precios de mayoreo alcanza $400. Los paquetes conservan su precio anunciado. El mínimo de entrega a domicilio es $400; debajo de ese importe se ofrece recoger en sucursal. No se inventa un costo de envío para pedidos menores.
+Todos los productos usan siempre su precio de mayoreo del menú proporcionado. Los paquetes conservan su precio anunciado. La política comercial es recibir pedidos desde $400, indicada en la interfaz; por solicitud del propietario no hay comparación automática de importes, cambio de tarifa ni bloqueo por mínimo. El negocio confirma las solicitudes por WhatsApp.
 
 Tampico y Ciudad Madero: entregas lunes a sábado. Altamira: sábados. Horario y disponibilidad sujetos a confirmación. Se permite solicitar fecha y hora preferidas; no representa reserva confirmada.
 
