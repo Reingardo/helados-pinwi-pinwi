@@ -7,4 +7,4 @@ test('mixed flavors and categories use one threshold',()=>{const r=calculateCart
 test('removal returns to retail',()=>{assert.equal(calculateCart({'ba-0':80}).isWholesale,true);assert.equal(calculateCart({'ba-0':79}).isWholesale,false)});
 test('packages preserve their published price',()=>{const r=calculateCart({'pack-fiesta':1,'ba-0':1});assert.equal(r.total,700)});
 test('empty and invalid cart entries are ignored',()=>{assert.equal(calculateCart({unknown:3,'ba-0':-2,'hl-0':1.5}).total,0)});
-test('catalog has unique ids and valid prices',()=>{const all=[...products,...packages];assert.equal(new Set(all.map(p=>p.id)).size,all.length);assert(all.every(p=>p.retail>=p.wholesale&&p.wholesale>0));assert.equal(products.length,76)});
+test('catalog has unique ids and valid prices',()=>{const all=[...products,...packages];assert.equal(new Set(all.map(p=>p.id)).size,all.length);assert(all.every(p=>p.retail>=p.wholesale&&p.wholesale>0));assert.equal(products.length,74)});

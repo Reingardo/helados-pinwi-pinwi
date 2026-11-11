@@ -8,7 +8,7 @@ Instalar con pnpm y ejecutar `pnpm dev`. Producción: `pnpm build`. Pruebas de p
 
 ## Catálogo y condiciones
 
-`lib/catalog.mjs` contiene 76 variantes de productos y cinco paquetes. Precios en MXN por pieza o paquete, transcritos del menú y promociones proporcionados. Bolis corresponden a Pinwis; bollos corresponden a heladitos del menú. Algunas fotos representan un surtido de la categoría y se indica en la página.
+`lib/catalog.mjs` contiene 74 variantes de productos y cinco paquetes. Precios en MXN por pieza o paquete, transcritos del menú y promociones proporcionados. Bolis corresponden a Pinwis; bollos corresponden a heladitos del menú. Algunas fotos representan un surtido de la categoría y se indica en la página.
 
 El precio de mayoreo se activa si el subtotal completo calculado con precios de mayoreo alcanza $400. Los paquetes conservan su precio anunciado. El mínimo de entrega a domicilio es $400; debajo de ese importe se ofrece recoger en sucursal. No se inventa un costo de envío para pedidos menores.
 
