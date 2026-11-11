@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {calculateCart,products,packages} from '../lib/catalog.mjs';
+test('retail total above 400 does not qualify if wholesale is below 400',()=>{const r=calculateCart({'ba-0':79});assert.equal(r.total,474);assert.equal(r.wholesaleSubtotal,395);assert.equal(r.isWholesale,false)});
+test('exact wholesale threshold activates all items',()=>{const r=calculateCart({'ba-0':80});assert.equal(r.total,400);assert.equal(r.isWholesale,true);assert.equal(r.savings,80)});
+test('mixed flavors and categories use one threshold',()=>{const r=calculateCart({'ba-0':20,'hl-0':20});assert.equal(r.total,420);assert.equal(r.isWholesale,true)});
+test('removal returns to retail',()=>{assert.equal(calculateCart({'ba-0':80}).isWholesale,true);assert.equal(calculateCart({'ba-0':79}).isWholesale,false)});
+test('packages preserve their published price',()=>{const r=calculateCart({'pack-fiesta':1,'ba-0':1});assert.equal(r.total,700)});
+test('empty and invalid cart entries are ignored',()=>{assert.equal(calculateCart({unknown:3,'ba-0':-2,'hl-0':1.5}).total,0)});
+test('catalog has unique ids and valid prices',()=>{const all=[...products,...packages];assert.equal(new Set(all.map(p=>p.id)).size,all.length);assert(all.every(p=>p.retail>=p.wholesale&&p.wholesale>0));assert.equal(products.length,76)});
