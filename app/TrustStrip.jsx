@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import {MapPin,Store,PartyPopper,ArrowUpRight} from 'lucide-react';
+export default function TrustStrip(){return <section className="section shop-paths" aria-label="Encuentra tu plan Pinwi"><a href="#visitanos"><MapPin/><h2>Conócenos en Madero</h2><p>Dos sucursales · 10:00 a. m. a 7:00 p. m.</p><span>Ubicaciones <ArrowUpRight size={16}/></span></a><Link href="/agenda-tu-evento/"><PartyPopper/><h2>Un evento con Pinwi</h2><p>Carritos con 150 o 200 pinwis para compartir.</p><span>Ver carritos <ArrowUpRight size={16}/></span></Link><Link href="/vende-helados-pinwi/"><Store/><h2>Empieza a revender</h2><p>Conoce la propuesta y el congelador para tu negocio.</p><span>Quiero vender Pinwi <ArrowUpRight size={16}/></span></Link></section>}

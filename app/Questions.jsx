@@ -1,0 +1,3 @@
+import {commonQuestions,whatsappUrl} from '../lib/business.mjs';
+import {ArrowUpRight,MessageCircle} from 'lucide-react';
+export default function Questions(){return <section className="section questions" aria-labelledby="questions-title"><div className="section-heading"><div><span className="eyebrow">TE LO PONEMOS FÁCIL</span><h2 id="questions-title">Resolvemos tus <em>dudas.</em></h2></div><a href={whatsappUrl} className="text-link" target="_blank" rel="noreferrer"><MessageCircle size={18}/> Habla con nosotros <ArrowUpRight size={16}/></a></div><div className="question-list">{commonQuestions.map(([question,answer])=><details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>}

@@ -3,7 +3,7 @@
 import {useEffect, useState} from 'react';
 import {ChevronLeft, ChevronRight, Pause, Play} from 'lucide-react';
 
-const slides = [
+const defaultSlides = [
   'Bolis de leche de distintos sabores',
   'Bolis de agua de distintos sabores',
   'Paquete de 30 bollos gourmet por $480',
@@ -15,7 +15,7 @@ const slides = [
   'Esquimales con chocolate y diferentes coberturas',
 ];
 
-export default function HeroSlideshow() {
+export default function HeroSlideshow({slides=defaultSlides,images,imagePrefix='hero-pinwi-',className='',label='Fotos de nuestros productos'}) {
   const [index, setIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [hidden, setHidden] = useState(false);
@@ -33,12 +33,12 @@ export default function HeroSlideshow() {
     };
   }, []);
   const next = (index + 1) % slides.length;
-  const source = n => `/assets/hero-pinwi-${n + 1}.webp`;
+  const source = n => `/assets/${imagePrefix}${images?.[n] ?? n + 1}.webp`;
   const advance = delta => {
     setPlaying(false);
     setIndex(i => (i + delta + slides.length) % slides.length);
   };
-  return <div className="hero-slideshow" role="region" aria-roledescription="carrusel" aria-label="Fotos de nuestros productos">
+  return <div className={`hero-slideshow ${className}`} role="region" aria-roledescription="carrusel" aria-label={label}>
     <div key={index} className={`hero-slide-frame hero-photo${!playing || hidden ? ' is-paused' : ''}`}>
       <div className="hero-slide-current" style={{backgroundImage: `url(${source(index)})`}}>
         <img src={source(index)} alt={slides[index]} width="1200" height="1200" fetchPriority={index === 0 ? 'high' : 'auto'}/>
